@@ -1,0 +1,24 @@
+show comments	
+show likes		
+can comment
+can like
+better design
+user profile
+show user rank 
+show tabs
+show next page
+homepage
+aboutpage
+control mem usage
+code refactor
+show likes on comments
+
+milestone 1
+show comments	done
+show likes
+homepage
+aboutpage
+refactor
+mem
+design /step
+

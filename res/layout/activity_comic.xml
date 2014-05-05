@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/com_relative" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/com_image" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.muhammedabuali.app.TouchImageView android:id="@id/com_view" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/ess" android:layout_alignParentTop="true" />
+            </ScrollView>
+        </ScrollView>
+        <ImageView android:id="@id/com_profile_pic" android:background="#ffeeeeee" android:padding="4.0dip" android:paddingTop="10.0dip" android:paddingBottom="60.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_below="@id/com_image" android:contentDescription="@drawable/ess" />
+        <TextView android:typeface="sans" android:textStyle="bold" android:textColor="@android:color/holo_blue_light" android:id="@id/com_profile_name" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="elgamed" android:layout_toRightOf="@id/com_profile_pic" android:layout_below="@id/com_image" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/holo_orange_dark" android:id="@id/com_caption" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="No Caption" android:layout_toRightOf="@id/com_profile_pic" android:layout_below="@id/com_profile_name" /> />
+<ListView android:id="@id/com_comments" android:background="#ffeeeeee" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/com_profile_pic" />
+    </RelativeLayout>
+</ScrollView>
