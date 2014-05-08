@@ -1,5 +1,7 @@
 package com.muhammedabuali.app.data;
 
+import com.muhammedabuali.app.Downloader;
+
 /**
  * Created by mohamed on 4/16/14.
  */
@@ -12,6 +14,8 @@ public class Comic {
 	String imageUrl;
 	String imageCaption;
 	String comicUrl;
+    String likes;
+    String rankUrl;
 
 	public Comic(String userName, String profileUrl, String pictureUrl,
 			String comicUrl, String imageUrl, String imageCaption) {
@@ -23,7 +27,19 @@ public class Comic {
 		this.imageCaption = imageCaption;
 	}
 
-	public String getImageUrl() {
+    public Comic(String userName, String profileUrl, String pictureUrl, String comicUrl, String imageUrl,
+                 String imageCaption, String likes, String rankUrl) {
+        this.userName = userName;
+        this.profileUrl = profileUrl;
+        this.pictureUrl = pictureUrl;
+        this.comicUrl = comicUrl;
+        this.imageUrl = imageUrl;
+        this.imageCaption = imageCaption;
+        this.likes = likes;
+        this.rankUrl= Downloader.baseUrl+rankUrl;
+    }
+
+    public String getImageUrl() {
 		return imageUrl;
 	}
 
@@ -41,5 +57,13 @@ public class Comic {
 
     public String getComicUrl() {
         return comicUrl;
+    }
+
+    public String getLikes() {
+        return likes;
+    }
+
+    public String getRankUrl() {
+        return rankUrl;
     }
 }

@@ -65,6 +65,10 @@ public class CustomAdapter extends ArrayAdapter<Comic> {
         });
         holder.prName = (TextView) convertView
                 .findViewById(R.id.profile_name);
+        holder.likes = (TextView) convertView
+                .findViewById(R.id.likes);
+        holder.rank = (ImageView) convertView
+                .findViewById(R.id.rank);
         holder.prpic = (ImageView) convertView
                 .findViewById(R.id.profile_pic);
         holder.caption = (TextView) convertView.findViewById(R.id.caption);
@@ -77,10 +81,14 @@ public class CustomAdapter extends ArrayAdapter<Comic> {
                     holder.thumbView, options);
             Downloader.getInstance().displayImage(comic.getProfilePic(),
                     holder.prpic, options);
+            holder.rank.setImageResource(R.drawable.ess);
+            Downloader.getInstance().displayImage(comic.getRankUrl(),
+                    holder.rank, options);
             if (comic.getCaption() != null && comic.getCaption().length() > 0)
                 holder.caption.setText(comic.getCaption());
             else
                 holder.caption.setText("No Caption");
+            holder.likes.setText(comic.getLikes());
             holder.prName.setText(comic.getUserName());
         }
         return convertView;
@@ -91,5 +99,7 @@ public class CustomAdapter extends ArrayAdapter<Comic> {
         public TextView prName;
         public ImageView prpic;
         public TextView caption;
+        public TextView likes;
+        public ImageView rank;
     }
 }
