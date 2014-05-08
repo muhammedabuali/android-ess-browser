@@ -59,6 +59,8 @@ public class CustomAdapter extends ArrayAdapter<Comic> {
                 comicIntent.putExtra("pp", comics.get(position).getProfilePic());
                 comicIntent.putExtra("pname", comics.get(position).getUserName());
                 comicIntent.putExtra("caption", comics.get(position).getCaption());
+                comicIntent.putExtra("likes", comics.get(position).getLikes());
+                comicIntent.putExtra("rank", comics.get(position).getRankUrl());
                 comicIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(comicIntent);
             }

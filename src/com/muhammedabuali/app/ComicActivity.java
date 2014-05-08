@@ -3,18 +3,18 @@ package com.muhammedabuali.app;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import android.content.Intent;
+import com.muhammedabuali.app.data.CustomImageView;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import android.app.Activity;
-import android.graphics.PointF;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.MeasureSpec;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
@@ -42,6 +42,13 @@ public class ComicActivity extends Activity {
         String caption = getIntent().getStringExtra("caption");
         TextView captionView = (TextView) findViewById(R.id.com_caption);
         captionView.setText(caption);
+        String likes = getIntent().getStringExtra("likes");
+        TextView likesview = (TextView) findViewById(R.id.com_likes);
+        likesview.setText(likes);
+        String rankUrl = getIntent().getStringExtra("rank");
+        ImageView rankView = (ImageView) findViewById(R.id.com_rank);
+        Downloader.getInstance().displayImage(rankUrl, rankView,
+                Downloader.getDisplayOptions());
         new RequestTask().execute(url);
     }
 
@@ -88,7 +95,7 @@ public class ComicActivity extends Activity {
 		}
 
 		@Override
-        protected void onPostExecute(ComicPage result) {
+        protected void onPostExecute(final ComicPage result) {
             if(result == null)
             {
                 Log.d("data", "null");
@@ -96,17 +103,10 @@ public class ComicActivity extends Activity {
             }
             Log.d("daya", "hello");
             super.onPostExecute(result);
-            TouchImageView imageView = (TouchImageView) findViewById(R.id.com_view);
+            CustomImageView imageView = (CustomImageView) findViewById(R.id.com_view);
             Downloader.getInstance().displayImage(result.getImageUrl(),
                     imageView, Downloader.getDisplayOptions());
-            
-           imageView.setOnClickListener(new OnClickListener() {
-                public void onClick(View v) {
-                	TouchImageView image = (TouchImageView) v;
-                    float scale = image.getCurrentZoom();
-                    image.setZoom((float) (scale * 1.25));
-                }
-        });           
+
             Log.d("comment", "size" + comments.size());
             showComments();
         }

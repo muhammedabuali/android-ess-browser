@@ -63,7 +63,7 @@ public class NewActivity extends Activity{
         protected ArrayList<Comic> doInBackground(String... uri) {
             try {
                 Document doc = Jsoup.connect(uri[0]).get();
-                Elements comicsElements = doc.select("section.comic");
+                Elements comicsElements = doc.select("section.navigation article");
                 for (int i=0; i< comicsElements.size(); i++){
                     Element comic = comicsElements.get(i);
                     String userName = comic.select("a.name").text();
@@ -76,10 +76,12 @@ public class NewActivity extends Activity{
                     String imageCaption = comic.select("div.userdata span").get(0).text();
                     String comicUrl = comic.select("div.comic-image a").get(0).attr("href");
                     String imageUrl = comic.select("div.comic-image img").get(0).attr("src");
+                    String likes = comic.select("a.like span").get(0).text();
+                    String rankUrl = comic.select("span.rank img").get(0).attr("src");
                     if(imageUrl.startsWith("/img"))
                     	imageUrl =  comic.select("div.comic-image img").get(0).attr("rel");
                     comics.add( new Comic(userName, profileUrl, pictureUrl, comicUrl,
-                            imageUrl, imageCaption));
+                            imageUrl, imageCaption, likes, rankUrl));
                 /*Log.d("data", userName +" a "+ profileUrl +" b "+ imageCaption +" c "+
                 pictureUrl+" d "+ comicUrl+" e " + imageUrl);*/
                 }

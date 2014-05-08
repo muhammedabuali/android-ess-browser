@@ -25,16 +25,21 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Unnamed-0" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29fb3eb8-405e-4603-b866-270462e7df60" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/rounded_corner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/muhammedabuali/app/data/Comic.java" afterPath="$PROJECT_DIR$/src/com/muhammedabuali/app/data/Comic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/muhammedabuali/app/data/CustomImageView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/muhammedabuali/app/ComicActivity.java" afterPath="$PROJECT_DIR$/src/com/muhammedabuali/app/ComicActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/muhammedabuali/app/CustomAdapter.java" afterPath="$PROJECT_DIR$/src/com/muhammedabuali/app/CustomAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/muhammedabuali/app/MyActivity.java" afterPath="$PROJECT_DIR$/src/com/muhammedabuali/app/MyActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/muhammedabuali/app/LameActivity.java" afterPath="$PROJECT_DIR$/src/com/muhammedabuali/app/LameActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/muhammedabuali/app/NewActivity.java" afterPath="$PROJECT_DIR$/src/com/muhammedabuali/app/NewActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/about.xml" afterPath="$PROJECT_DIR$/res/layout/about.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_comic.xml" afterPath="$PROJECT_DIR$/res/layout/activity_comic.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/list_item.xml" afterPath="$PROJECT_DIR$/res/layout/list_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/rounded_corner.xml" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/rounded_corner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyActivity.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,56 +103,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/MyActivity.java">
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="52" selection-start="3553" selection-end="3553" vertical-scroll-proportion="-153.5" vertical-offset="460" max-vertical-offset="1131">
+            <state line="3" column="151" selection-start="365" selection-end="365" vertical-scroll-proportion="-1.5" vertical-offset="0" max-vertical-offset="169">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/CustomAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="49" selection-start="3362" selection-end="3362" vertical-scroll-proportion="0.0" vertical-offset="419" max-vertical-offset="1196">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list_item.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/list_item.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="17" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.4" vertical-offset="0" max-vertical-offset="585">
+            <state line="67" column="26" selection-start="2253" selection-end="2253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1131">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rounded_corner.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/drawable-xxhdpi/rounded_corner.xml">
+      <file leaf-file-name="WelcomeActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/WelcomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="56" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312">
+            <state line="24" column="29" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comic.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/data/Comic.java">
+      <file leaf-file-name="activity_welcome.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_welcome.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="41" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="845">
-              <folding>
-                <element signature="e#1448#1449#0" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1510#1511#0" expanded="true" />
-                <element signature="e#1540#1541#0" expanded="true" />
-              </folding>
+            <state line="5" column="42" selection-start="931" selection-end="931" vertical-scroll-proportion="0.11690647" vertical-offset="0" max-vertical-offset="556">
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -165,19 +159,29 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/muhammedabuali/app/MyActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/muhammedabuali/app/CustomAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/muhammedabuali/app/data/Comic.java" />
         <option value="$PROJECT_DIR$/res/layout/rounded_corner.xml" />
         <option value="$PROJECT_DIR$/res/drawable-xxhdpi/rounded_corner.xml" />
         <option value="$PROJECT_DIR$/res/layout/list_item.xml" />
+        <option value="$PROJECT_DIR$/src/com/muhammedabuali/app/CustomAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/muhammedabuali/app/LameActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/muhammedabuali/app/NewActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/muhammedabuali/app/data/CustomImageView.java" />
+        <option value="$PROJECT_DIR$/src/com/muhammedabuali/app/data/CustomImageVIew.java" />
+        <option value="$PROJECT_DIR$/src/com/muhammedabuali/app/ComicView.java" />
+        <option value="$PROJECT_DIR$/res/layout/activity_comic.xml" />
+        <option value="$PROJECT_DIR$/src/com/muhammedabuali/app/ComicActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/about.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/res/layout/activity_welcome.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="53" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1313" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -210,6 +214,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -239,7 +244,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,35 +262,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyActivity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyActivity" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-xxhdpi" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,7 +296,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="avd" />
   </component>
   <component name="RecentsManager">
@@ -520,7 +514,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="24" width="1313" height="744" extended-state="6" />
+    <frame x="53" y="-4" width="1313" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -533,13 +527,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296617" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296617" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47521636" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33175728" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17623918" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19464146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -572,6 +566,33 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/ComicActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="42" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.0" vertical-offset="1482" max-vertical-offset="1989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="15" selection-start="2013" selection-end="2045" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="312">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/comment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="156">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="10" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1536">
@@ -633,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/CustomAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="49" selection-start="3362" selection-end="3362" vertical-scroll-proportion="0.0" vertical-offset="419" max-vertical-offset="1196">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/data/Comic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="41" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="845">
@@ -652,31 +666,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/MyActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/drawable-xxhdpi/rounded_corner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="52" selection-start="3553" selection-end="3553" vertical-scroll-proportion="-153.5" vertical-offset="460" max-vertical-offset="1131">
+        <state line="9" column="30" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/CustomAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="42" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0" vertical-offset="419" max-vertical-offset="1222">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-xxhdpi/rounded_corner.xml">
+    <entry file="file://$PROJECT_DIR$/res/values/ids.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="26" selection-start="494" selection-end="494" vertical-scroll-proportion="0.19969279" vertical-offset="0" max-vertical-offset="651">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/instructions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/comic.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="56" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="15" selection-start="2013" selection-end="2045" vertical-scroll-proportion="0.32704404" vertical-offset="0" max-vertical-offset="636">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/comment.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.4" vertical-offset="0" max-vertical-offset="585">
+        <state line="5" column="17" selection-start="768" selection-end="768" vertical-scroll-proportion="0.10220126" vertical-offset="0" max-vertical-offset="636">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/NewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="13" selection-start="3976" selection-end="3976" vertical-scroll-proportion="0.56463593" vertical-offset="465" max-vertical-offset="1183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/LameActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="83" selection-start="2425" selection-end="2425" vertical-scroll-proportion="0.08172362" vertical-offset="465" max-vertical-offset="1183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/ComicActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="12" selection-start="4448" selection-end="4448" vertical-scroll-proportion="0.41734862" vertical-offset="850" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_comic.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="51" selection-start="736" selection-end="736" vertical-scroll-proportion="0.16993465" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.17727272" vertical-offset="117" max-vertical-offset="819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/AboutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="134" selection-end="134" vertical-scroll-proportion="0.07726597" vertical-offset="0" max-vertical-offset="673">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/data/CustomImageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="39" selection-start="5325" selection-end="5325" vertical-scroll-proportion="0.55151516" vertical-offset="1755" max-vertical-offset="2756">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/about.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="241" selection-start="795" selection-end="795" vertical-scroll-proportion="0.08201893" vertical-offset="0" max-vertical-offset="634">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="151" selection-start="365" selection-end="365" vertical-scroll-proportion="-1.5" vertical-offset="0" max-vertical-offset="169">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="26" selection-start="2253" selection-end="2253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1131">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/muhammedabuali/app/WelcomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="29" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_welcome.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="42" selection-start="931" selection-end="931" vertical-scroll-proportion="0.11690647" vertical-offset="0" max-vertical-offset="556">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
