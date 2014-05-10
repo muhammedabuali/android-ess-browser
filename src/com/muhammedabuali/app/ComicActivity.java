@@ -1,14 +1,5 @@
 package com.muhammedabuali.app;
 
-import java.io.IOException;
-import java.util.ArrayList;
-
-import android.content.Intent;
-import com.muhammedabuali.app.data.CustomImageView;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
-
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -21,9 +12,14 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import com.muhammedabuali.app.data.ComicPage;
 import com.muhammedabuali.app.data.Comment;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class ComicActivity extends Activity {
     @Override
@@ -34,7 +30,7 @@ public class ComicActivity extends Activity {
         url = Downloader.baseUrl + url;
         String profilePic = getIntent().getStringExtra("pp");
         ImageView imageView = (ImageView) findViewById(R.id.com_profile_pic);
-        Downloader.getInstance().displayImage(profilePic, imageView, 
+        Downloader.getInstance().displayImage(profilePic, imageView,
                 Downloader.getDisplayOptions());
         TextView nameTextView = (TextView) findViewById(R.id.com_profile_name);
         String pnameString = getIntent().getStringExtra("pname");
@@ -52,34 +48,34 @@ public class ComicActivity extends Activity {
         new RequestTask().execute(url);
     }
 
-    
+
     class RequestTask extends AsyncTask<String, String, ComicPage> {
-    	ArrayList<Comment> comments;
+        ArrayList<Comment> comments;
+
         @Override
         protected ComicPage doInBackground(String... uri) {
             try {
                 Log.d("data", "background");
                 Document doc = Jsoup.connect(uri[0]).get();
                 String imageUrl = doc.select("#image-con img").attr("src");
-                if(imageUrl.startsWith("/img/nsfw_warning.png"))
-                	imageUrl = doc.select("#image-con img").attr("rel");
+                if (imageUrl.startsWith("/img/nsfw_warning.png"))
+                    imageUrl = doc.select("#image-con img").attr("rel");
                 Elements elements = doc.select("#comments ul").get(0).children();
                 comments = new ArrayList();
-                for(int i=0; i< elements.size(); i++){
-                	String pp = elements.get(i).select("div.userpic a span img")
-                			.attr("src");
-                	String pname = elements.get(i).select("a.name")
-                			.text();
-                	String text = elements.get(i).select("div.text")
-                			.text();
-                	String likes =   elements.get(i).select("div.actions"
-                			+ " a.like span").text() ;
-                	String lames =   elements.get(i).select("div.actions"
-                			+ " a.lame span").text() ;
-                	comments.add(new Comment(pp, pname, text, likes, lames));
+                for (int i = 0; i < elements.size(); i++) {
+                    String pp = elements.get(i).select("div.userpic a span img")
+                            .attr("src");
+                    String pname = elements.get(i).select("a.name")
+                            .text();
+                    String text = elements.get(i).select("div.text")
+                            .text();
+                    String likes = elements.get(i).select("div.actions"
+                            + " a.like span").text();
+                    String lames = elements.get(i).select("div.actions"
+                            + " a.lame span").text();
+                    comments.add(new Comment(pp, pname, text, likes, lames));
                 }
-                ComicPage page = new ComicPage(imageUrl);
-                return page;
+                return new ComicPage(imageUrl);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -88,30 +84,36 @@ public class ComicActivity extends Activity {
         }
 
         private void showComments() {
-			ListView listView = (ListView) findViewById(R.id.com_comments);
-			CommentsAdapter adapter = new CommentsAdapter(getApplicationContext(), 0, comments);
-			listView.setAdapter(adapter);
-			setListViewHeightBasedOnChildren(listView);
-		}
+            ListView listView = (ListView) findViewById(R.id.com_comments);
+            CommentsAdapter adapter = new CommentsAdapter(getApplicationContext(), 0, comments);
+            listView.setAdapter(adapter);
+            setListViewHeightBasedOnChildren(listView);
+        }
 
-		@Override
+        @Override
         protected void onPostExecute(final ComicPage result) {
-            if(result == null)
-            {
+            if (result == null) {
                 Log.d("data", "null");
                 return;
             }
             Log.d("daya", "hello");
             super.onPostExecute(result);
-            CustomImageView imageView = (CustomImageView) findViewById(R.id.com_view);
+            ImageView imageView = (ImageView) findViewById(R.id.com_view);
             Downloader.getInstance().displayImage(result.getImageUrl(),
                     imageView, Downloader.getDisplayOptions());
-
+            /*imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getApplicationContext(), ComicView.class);
+                    intent.putExtra("image", result.getImageUrl());
+                    startActivity(intent);
+                }
+            });*/
             Log.d("comment", "size" + comments.size());
             showComments();
         }
     }
-    
+
     public static void setListViewHeightBasedOnChildren(ListView listView) {
         ListAdapter listAdapter = listView.getAdapter();
         if (listAdapter == null)

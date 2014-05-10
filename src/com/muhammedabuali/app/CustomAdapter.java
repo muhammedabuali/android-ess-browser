@@ -1,7 +1,5 @@
 package com.muhammedabuali.app;
 
-import java.util.ArrayList;
-
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -12,9 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.muhammedabuali.app.data.Comic;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
+
+import java.util.ArrayList;
 
 public class CustomAdapter extends ArrayAdapter<Comic> {
 
@@ -22,8 +21,10 @@ public class CustomAdapter extends ArrayAdapter<Comic> {
     private ArrayList<Comic> comics;
     private DisplayImageOptions options;
 
+
+
     public CustomAdapter(Context context, int list_item_resource,
-            ArrayList<Comic> comics) {
+                         ArrayList<Comic> comics) {
         super(context, list_item_resource, comics);
         Log.d("data", "size" + comics.size() + "");
         this.context = context;
@@ -33,25 +34,25 @@ public class CustomAdapter extends ArrayAdapter<Comic> {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-        Log.d("click", "position1 "+ position);
+        Log.d("click", "position1 " + position);
         Comic comic = comics.get(position);
-        ViewHolder holder = null;
+        ViewHolder holder;
         if (convertView == null) {
-        	Log.d("click", "position2 "+ position);
+            Log.d("click", "position2 " + position);
             // inflater construct item view
             LayoutInflater inflater = (LayoutInflater) getContext()
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.list_item, parent, false);
-            
+
         }
         holder = new ViewHolder();
         holder.thumbView = (ImageView) convertView
                 .findViewById(R.id.thumb_image);
         holder.thumbView.setOnClickListener(new OnClickListener() {
-        	
+
             @Override
             public void onClick(View v) {
-                Log.d("click", "position"+ position);
+                Log.d("click", "position" + position);
                 Intent comicIntent = new Intent(context,
                         ComicActivity.class);
                 // comicIntent.putExtra("comics", comics);
